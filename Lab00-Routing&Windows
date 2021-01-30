@@ -1,0 +1,24 @@
+AD01: 
+  IP - 10.0.5.5/24 
+  DG - 10.0.5.2
+  DNS - 10.0.5.5
+
+FW01:
+  IP - LAN: 10.0.5.2/24
+       WAN: 10.0.17.113
+  DNS - 8.8.8.8
+
+MGMT01:
+  IP - 10.0.5.10/24
+  DG - 10.0.5.2
+  DNS - 10.0.5.5
+  
+WKS01: 
+  IP - 10.0.5.100/24
+  DG - 10.0.5.2
+  DNS - 10.0.5.5
+  
+TERMS
+  Domain Admin vs Local Admin - Domain Admin's are admins of everu domain joined device, while local admins are admins of ONLY specific devices.  
+  A Record - maps domain name to IP (wkso01-quentin = 10.0.5.100)
+  PTR Record - resolves IP to domain name (If you know the IP, nslookup will return the hostname) 
