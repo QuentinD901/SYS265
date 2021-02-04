@@ -1,0 +1,11 @@
+Pfsense was configured to use the DHCP service
+
+How to configure: 
+  Log into pfsense using a browser
+  Select Services > DHCP Server 
+  Under LAN:
+  Enable DHCP on LAN
+  Set Range of Usable Hosts (10.0.5.150 - 10.0.5.175)
+  Set DNS Servers (10.0.5.5)
+  ENABLE TIME FORMAT CHANGE TRUST ME!!!
+  Satically Assingn Mappings if Needed
