@@ -1,0 +1,19 @@
+nmon01
+  ip 10.0.5.11
+  
+web01
+  ip 10.0.5.200
+  
+SNMP:
+    SNMP, or Simple Network Management Protocol is a standard for exactly what it sounds like...NETWORK MANAGEMENT! SNMP can give or change information on managed
+  devices on the network. Rules can be set up to better monitor the devices
+  
+Terms: 
+  Management Information Base (MIB):
+    The database used for managing the devices in the network.
+    
+  Traps: 
+    Basically an SNMP alert. they are sent from the snmp managed devices to a central manager. 
+    
+  Service/Agent:
+    what is running on the device.  
