@@ -1,0 +1,14 @@
+Key Management 
+  Key pairs is what allows for us to decrypt and encrypt the VMs passwords and login information 
+  ACCESS CONTROL - keys wont work if they are too accessible   
+
+Security Groups
+  This is what allows you to control the firewall settings are what services/ports are open. 
+  Our security group currentley consits of RHEL7 and WIN Serv 2019
+  
+Firewalling
+  managed through security groups 
+  
+Reflection 
+  AWS is a simple and easy way to spit up VMs and do tests. Especially becuase AMAZON is hosting it, VM breaks... no problem spit up a new one within minutes. They are
+  easy to configure and control. you can control several VMs firewalls with one security group. :)
