@@ -10,5 +10,6 @@ Firewalling
   managed through security groups 
   
 Reflection 
-  AWS is a simple and easy way to spit up VMs and do tests. Especially becuase AMAZON is hosting it, VM breaks... no problem spit up a new one within minutes. They are
-  easy to configure and control. you can control several VMs firewalls with one security group. :)
+  AWS is a simple and easy way to spit up VMs and do tests. Especially becuase AMAZON is hosting it, VM breaks... no problem spit up a new one within minutes. 
+  They are easy to configure and control. you can control several VMs firewalls with one security group. :) 
+  I am going to deeply explore everything my 50 Amazon Dollaroos can get me  
