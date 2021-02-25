@@ -1,0 +1,38 @@
+Ubuntu
+  Networking:
+    If you want to "cheat" and use a GUI install "netowrk manager" and use nmtui
+   Since we are here to learn edit /etc/netplam/00-installer0config.yaml 
+      set dhcp to no
+      add address 10.0.5.12/24
+      add gateway (gateway4) 10.0.5.2
+      add nameservers (DNS) 10.0.5.5
+      use "netplan try" to testnew config
+      use "netplan apply" to apply the changes 
+    
+  Hostname:
+    hostnamectl set-hostname docker01-quentin
+    edit /etc/hosts and replace occurances with new hostname
+    reboot 
+    or use nmtui to do this much faster
+    
+  Sudoers:
+    to add a sudoer on Ubuntu (NO wheel group on Ubuntu) 
+      usermod -aG sudo quentin
+
+Docker Commands
+  version
+    tells you the version you are running
+  run
+    runs proccesses in containers 
+      -d: run the container in the background and print the new container ID
+      -P: Publish all exposed ports to random ports on the hosts interface
+  ps
+    lists containers (default only shows running)
+  images
+    lists downlaoded images 
+    
+Docker Compose 
+  Allows you to run multi-container application envioronments
+  
+Reflection
+  
