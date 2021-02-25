@@ -35,4 +35,6 @@ Docker Compose
   Allows you to run multi-container application envioronments
   
 Reflection
-  
+  Docker is an open source platform for containers. Containers are similar to VM's/Virtulization but not excatly the same. Containers virtulize to run container
+  applications. Each container runs an isolated process and containers sharea common OS. Containerization generally uses less resources than VMs, since it does not 
+  need to virtulaize a whole OS. 
