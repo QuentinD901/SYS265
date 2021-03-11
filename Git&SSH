@@ -1,0 +1,37 @@
+GIT
+  Git is an open source project management softare. It can track cahnges in files, be used to quickly transfeer files betweem PCs/servers/workstations
+  We utilized GitHub and Git to edit, transfer, and comment on files.  
+  We created README files easily and showed how simple mistakes can heepen
+      The oops deliverable is an example of this
+      we tried to put the hostname of the PC in the README, but instead of the hostname we added "hostname" 
+      
+  Git Comaands
+    Add 
+      tells git we want to include updates to a file in the nesxt commit 
+    Clone
+      copy a directory off of a GitHub
+    Commit
+      makes the changes (hitting the save button)
+    Push
+      sends the working directory and changes to GitHub
+      
+  Linux vs Windows 
+    Linkux will not save Github login information, you will need to input it with each push
+    Windows will cache your login info so you only need to input it once
+    
+SSH
+  At this point in the year we all know good ol SSH
+  but if you forgot, SSH logins you into secure shells if you know the username, password (if needed), and hostname of a system
+  
+    Script 
+      We created a script that utalizes PKI and creates an SSH user that logins in using RSA keys rather than username and password. The script can also be utalized 
+      to diable root's SSH captabilties. It can be found here:
+        https://github.com/QuentinD901/SYS265-tech-journal/blob/main/linux/centos7/chungus-secure-ssh.sh
+          Creates a user along with a home and ssh directory
+          Copies the key from the the SYS folder (gotten off of GitHub) to the user's authorized keys folder
+          Sets proper perms for user and his directories/files
+          Removes root's ssh capabilities
+          
+      We generated a Public Key and added it to web01's local repo, this allows us to ssh out of web01 using the Public key if it is a user's authorized keys folder. 
+      The script also utalizes Git and Github.
+        This is done because we have the it stored on the GutHub repo, making it easily accessible to any of my VMs via Git
