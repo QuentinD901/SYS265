@@ -26,3 +26,13 @@ NMCLI
     nmcli con mod **DEVICE NAME** ipv4.dns "**DNS IP ADDRESS**"
       To Save Changes:
         nmcli con up **DEVICE NAME**
+        
+Realmd
+  The domain service, domains are called realms on Linux (Much better name)
+    CentOS 8 Install:
+      Download Packages:
+        dnf install realmd sssd oddjob oddjob-mkhomedir adcli samba-common samba-common-tools krb5-workstation authselect-compat -y
+      Find Realm/Domain:
+        realm disocover realm.local
+      Join Realm:
+        realm join realm.local -U AdminAccount
