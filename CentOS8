@@ -1,0 +1,28 @@
+CentOS 8
+  based on Fedora 28
+  yum v4
+    utalizes the dnf package installer (dnf install **package**)
+  
+  Cockpit
+    GUI for Linux Server Management 
+    Can control multiple Linux based devices (as long as they support cockpit)
+      Requries the dashboard to monitor multiple hosts
+      Can manage package updates, SELinux config, netowrking, and logs
+        Also monitors hardware, shows statistics (cpu usage)
+    Terminal - allows for a CLI to use the server
+      
+    Easiest to Add multiple devices if the boxes are in the same AD domain
+      This way when adding a box to the dashboard you can use a Domain Admin (which is sudo'd) to login to the machine 
+
+NMCLI
+  Similar to nmtui but no GUI all command line
+  To show connectinons:
+    nmcli con show
+  To show status of connections:
+    nmcli dev status
+  To Manage Network Config:
+    nmcli con mod **DEVICE NAME** ipv4.addresses **HOST IP ADDRESS**
+    nmcli con mod **DEVICE NAME** ipv4.gateway **GATEWAY IP ADDRESS**
+    nmcli con mod **DEVICE NAME** ipv4.dns "**DNS IP ADDRESS**"
+      To Save Changes:
+        nmcli con up **DEVICE NAME**
