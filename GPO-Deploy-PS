@@ -1,0 +1,13 @@
+Create an OU via PS
+  New-ADOrganizationalUnit -name "NAME OF OU"
+
+Get OU Information and remove protected delete
+  get-ADOrganizationalUnit -Identity "OU=OU NAME,DC=NAME OF DOMAIN,DC=local" | set-ADOrganizationalUnit –ProtectedFromAccidentalDeletion $false
+Delete an OU
+  Remove-ADOrganizationalUnit OU INFO
+
+Move Items into an OU
+  Move-ADObject -Identity "CN=OBJECT NAME,CN=LOCATION OF OBJECT,DC=DOMAIN NAME,DC=local" -targetpath "OU=NEW OU TO BE OUTPUTTED TO,DC=DOMAIN NAME,DC=local"
+  
+Search Event Log
+  Get-EventLog -LogName LOG FOLDER -InstanceId ID-NUMBER
