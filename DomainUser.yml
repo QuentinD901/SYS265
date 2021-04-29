@@ -1,0 +1,10 @@
+- name: Ensure user bob is created and use custom credentials to create the user
+  win_domain_user:
+    name: bob
+    firstname: Bob
+    surname: Smith
+    password: Password!
+    state: present
+    domain_username: GROUP1.local\admin-final
+    domain_password: Group1Best_Group
+    domain_server: DC1@group1.local
